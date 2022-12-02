@@ -47,7 +47,6 @@ public class InsertSort {
         test(testTime, maxLen, maxNum,InsertSort::insertSort);
         test(testTime, maxLen, maxNum,InsertSort::insertSort1);
 
-
     }
 
 

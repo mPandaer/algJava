@@ -36,14 +36,14 @@ public class ArrayUtil {
 
     //对数器
     public static void test(int testTime,int maxLen,int maxNum,TestBlock testBlock){
-        //生成随机数组
-        int[] arr = createRandomArray(maxLen,maxNum);
-        int[] arr1 = Arrays.copyOf(arr,arr.length);
-        int[] arr2 = Arrays.copyOf(arr,arr.length);
         for (int i = 0; i<testTime;i++) {
+            //生成随机数组
+            int[] arr = createRandomArray(maxLen,maxNum);
+            int[] arr1 = Arrays.copyOf(arr,arr.length);
+            int[] arr2 = Arrays.copyOf(arr,arr.length);
+
             Arrays.sort(arr1);
             testBlock.block(arr2);
-
             if (!isEquals(arr1,arr2)) {
                 output(arr);
                 System.out.println("失败了");
