@@ -12,12 +12,14 @@ public class BitFindNum {
     // a^b = b^a
     // a^(b^c) = (a^b)^c
     // 0 ^ a = a
+
     public static int bitFindNum(int[] arr) {
         int res = 0;
         for (int num : arr) {
             res ^= num;
         }
         return res;
+
     }
 
     //利用hash

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayUtil {
     public static int[] createRandomArray(int maxLen, int maxNum) {
-        int len = (int) (Math.random() * maxLen);
+        int len = (int) (Math.random() * maxLen); //(0,1)
         int[] res = new int[len];
         for (int i = 0; i < len; i++) {
             res[i] = (int) (Math.random() * maxNum) - (int) (Math.random() * maxNum);

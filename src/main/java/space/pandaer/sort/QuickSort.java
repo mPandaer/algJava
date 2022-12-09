@@ -104,9 +104,9 @@ public class QuickSort {
 
     //test
     public static void main(String[] args) {
-        int testTimes = 1000;
-        int maxLen = 200;
-        int maxNum = 3000;
+        int testTimes = 10000;
+        int maxLen = 5000;
+        int maxNum = 100;
 
         test(testTimes,maxLen,maxNum,QuickSort::quickSort);
         test(testTimes,maxLen,maxNum,QuickSort::quickSort1);
